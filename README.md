@@ -8,6 +8,11 @@ yay.spaceの非公開APIです。
 * ユーザーの詳細データの取得
 * ハッシュタグ等の検索
 
+# インストール
+```
+pip install YayAPI
+```
+
 # 使用方法
 
 ```python
