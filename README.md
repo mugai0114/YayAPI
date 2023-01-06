@@ -24,7 +24,10 @@ api.Timeline()  # タイムラインの取得
 api.UserSearch(nickname='Konn', biography='hello@konn.ink')  # ユーザーの検索
 api.TagSearch(tag='YouName')  # ハッシュタグの検索
 ```
+# 支援
+[![Build](https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png)](https://www.buymeacoffee.com/Konn)
 
+[PayPal](https://paypal.me/konnkoko)
 # 注意
 
 これは、非公式のAPIです、一切責任を負いません。 自己責任でご使用下さい。
