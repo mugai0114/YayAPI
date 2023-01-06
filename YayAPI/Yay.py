@@ -16,7 +16,7 @@ class Yay:
             return {'success': True,
                     'data': response.json()['posts']}
         else:
-            raise {'success': False}
+            return {'success': False}
 
     def UserSearch(self, nickname: str = None, biography: str = None, vip: bool = None,
                    recently_created: bool = None, not_recent_gomimushi: bool = None) -> dict:
@@ -48,7 +48,7 @@ class Yay:
             return {'success': True,
                     'data': response.json()['users']}
         else:
-            raise {'success': False}
+            return {'success': False}
 
     def TagSearch(self, tag: str) -> dict:
         """
@@ -64,7 +64,7 @@ class Yay:
             return {'success': True,
                     'data': response.json()['tags']}
         else:
-            raise {'success': False}
+            return {'success': False}
 
     def KeywordSearch(self, keyword: str) -> dict:
         """
@@ -80,7 +80,7 @@ class Yay:
             return {'success': True,
                     'data': response.json()['posts']}
         else:
-            raise {'success': False}
+            return {'success': False}
 
     def PostData(self, post_id: str) -> dict:
         """
@@ -94,7 +94,7 @@ class Yay:
             return {'success': True,
                     'data': response.json()}
         else:
-            raise {'success': False}
+            return {'success': False}
 
     def UserData(self, user_id: str) -> dict:
         """
@@ -108,7 +108,7 @@ class Yay:
             return {'success': True,
                     'data': response.json()}
         else:
-            raise {'success': False}
+            return {'success': False}
 
     def UserActiveCall(self, user_id: str) -> dict:
         """
@@ -122,7 +122,7 @@ class Yay:
             return {'success': True,
                     'data': response.json()}
         else:
-            raise {'success': False}
+            return {'success': False}
 
     def UserTimeline(self, user_id: str) -> dict:
         """
@@ -136,4 +136,4 @@ class Yay:
             return {'success': True,
                     'data': response.json()}
         else:
-            raise {'success': False}
+            return {'success': False}
