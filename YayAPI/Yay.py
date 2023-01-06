@@ -16,7 +16,7 @@ class Yay:
             return {'success': True,
                     'data': response.json()['posts']}
         else:
-            return {'success': False}
+            raise {'success': False}
 
     def UserSearch(self, nickname: str = None, biography: str = None, vip: bool = None,
                    recently_created: bool = None, not_recent_gomimushi: bool = None) -> dict:
@@ -80,7 +80,7 @@ class Yay:
             return {'success': True,
                     'data': response.json()['posts']}
         else:
-            return {'success': False}
+            raise {'success': False}
 
     def PostData(self, post_id: str) -> dict:
         """
@@ -94,7 +94,7 @@ class Yay:
             return {'success': True,
                     'data': response.json()}
         else:
-            return {'success': False}
+            raise {'success': False}
 
     def UserData(self, user_id: str) -> dict:
         """
@@ -108,7 +108,7 @@ class Yay:
             return {'success': True,
                     'data': response.json()}
         else:
-            return {'success': False}
+            raise {'success': False}
 
     def UserActiveCall(self, user_id: str) -> dict:
         """
@@ -122,7 +122,7 @@ class Yay:
             return {'success': True,
                     'data': response.json()}
         else:
-            return {'success': False}
+            raise {'success': False}
 
     def UserTimeline(self, user_id: str) -> dict:
         """
@@ -136,4 +136,4 @@ class Yay:
             return {'success': True,
                     'data': response.json()}
         else:
-            return {'success': False}
+            raise {'success': False}
